@@ -1,0 +1,432 @@
+all
+
+
+check.py
+import os
+import sys
+
+outfile = open('all','w')
+
+for line in os.listdir('.'):
+	fileName = line.strip()
+	outfile.write(fileName+'\n')
+	file = open(fileName,'r')
+	for l in file:
+		outfile.write(l)
+	outfile.write('\n\n')
+
+
+outfile.close()
+
+
+of0w1.0g5v0.0625l0.05
+Iteration: 1 testingReturn: -3.6453
+Iteration: 1 practicalReturn: -3.8048
+--------------------------------------------------
+Iteration: 2 testingReturn: -3.6599
+Iteration: 2 practicalReturn: -3.7845
+--------------------------------------------------
+Iteration: 5 testingReturn: -3.5924
+Iteration: 5 practicalReturn: -3.7935
+--------------------------------------------------
+Iteration: 10 testingReturn: -3.5613
+Iteration: 10 practicalReturn: -3.8034
+--------------------------------------------------
+Iteration: 20 testingReturn: -3.6284
+Iteration: 20 practicalReturn: -3.8771
+--------------------------------------------------
+Iteration: 50 testingReturn: -2.0577
+Iteration: 50 practicalReturn: -2.1190
+--------------------------------------------------
+Iteration: 100 testingReturn: -3.6231
+Iteration: 100 practicalReturn: -3.6299
+--------------------------------------------------
+Iteration: 200 testingReturn: -3.6485
+Iteration: 200 practicalReturn: -3.6597
+--------------------------------------------------
+Iteration: 500 testingReturn: -3.5261
+Iteration: 500 practicalReturn: -3.8022
+--------------------------------------------------
+Iteration: 1000 testingReturn: -1.9702
+Iteration: 1000 practicalReturn: -2.0453
+--------------------------------------------------
+Iteration: 2000 testingReturn: -2.4611
+Iteration: 2000 practicalReturn: -2.5931
+--------------------------------------------------
+Iteration: 5000 testingReturn: -2.0481
+Iteration: 5000 practicalReturn: -2.1286
+--------------------------------------------------
+Iteration: 10000 testingReturn: -2.4330
+Iteration: 10000 practicalReturn: -2.5536
+--------------------------------------------------
+Iteration: 15000 testingReturn: -2.2699
+Iteration: 15000 practicalReturn: -2.3883
+--------------------------------------------------
+
+
+of0w1.0g5v0.0625l0.05Retroflex
+Iteration: 1 testingReturn: -1.1876
+Iteration: 1 practicalReturn: -1.1460
+--------------------------------------------------
+Iteration: 2 testingReturn: -1.2135
+Iteration: 2 practicalReturn: -1.1570
+--------------------------------------------------
+Iteration: 5 testingReturn: -1.2042
+Iteration: 5 practicalReturn: -1.1537
+--------------------------------------------------
+Iteration: 10 testingReturn: -1.2043
+Iteration: 10 practicalReturn: -1.1146
+--------------------------------------------------
+Iteration: 20 testingReturn: -1.2207
+Iteration: 20 practicalReturn: -1.1191
+--------------------------------------------------
+Iteration: 50 testingReturn: -0.9275
+Iteration: 50 practicalReturn: -0.9782
+--------------------------------------------------
+Iteration: 100 testingReturn: -1.1969
+Iteration: 100 practicalReturn: -1.1411
+--------------------------------------------------
+Iteration: 200 testingReturn: -0.9160
+Iteration: 200 practicalReturn: -0.9291
+--------------------------------------------------
+Iteration: 500 testingReturn: -0.9076
+Iteration: 500 practicalReturn: -0.9130
+--------------------------------------------------
+Iteration: 1000 testingReturn: -0.9447
+Iteration: 1000 practicalReturn: -0.9449
+--------------------------------------------------
+Iteration: 2000 testingReturn: -1.0754
+Iteration: 2000 practicalReturn: -1.1613
+--------------------------------------------------
+Iteration: 5000 testingReturn: -0.9721
+Iteration: 5000 practicalReturn: -1.0120
+--------------------------------------------------
+
+
+of0w1.0g5v0.0625l0.05Retroflex_tmp
+Iteration: 1 testingReturn: -1.2276
+Iteration: 1 practicalReturn: -1.1158
+--------------------------------------------------
+Iteration: 2 testingReturn: -1.1852
+Iteration: 2 practicalReturn: -1.1474
+--------------------------------------------------
+Iteration: 5 testingReturn: -1.2124
+Iteration: 5 practicalReturn: -1.1686
+--------------------------------------------------
+Iteration: 10 testingReturn: -1.2080
+Iteration: 10 practicalReturn: -1.1438
+--------------------------------------------------
+Iteration: 20 testingReturn: -1.2341
+Iteration: 20 practicalReturn: -1.1485
+--------------------------------------------------
+Iteration: 50 testingReturn: -0.8888
+Iteration: 50 practicalReturn: -0.8770
+--------------------------------------------------
+Iteration: 100 testingReturn: -1.5845
+Iteration: 100 practicalReturn: -1.4374
+--------------------------------------------------
+Iteration: 200 testingReturn: -1.5295
+Iteration: 200 practicalReturn: -1.4692
+--------------------------------------------------
+Iteration: 500 testingReturn: -1.6700
+Iteration: 500 practicalReturn: -1.4254
+--------------------------------------------------
+Iteration: 1000 testingReturn: -0.8057
+Iteration: 1000 practicalReturn: -0.7591
+--------------------------------------------------
+Iteration: 2000 testingReturn: -0.8861
+Iteration: 2000 practicalReturn: -0.8737
+--------------------------------------------------
+
+
+of0w1.0g5v0.0625l0.05_tmp
+Iteration: 1 testingReturn: -3.6269
+Iteration: 1 practicalReturn: -3.8613
+--------------------------------------------------
+Iteration: 2 testingReturn: -3.6372
+Iteration: 2 practicalReturn: -3.8471
+--------------------------------------------------
+Iteration: 5 testingReturn: -3.5682
+Iteration: 5 practicalReturn: -3.7966
+--------------------------------------------------
+Iteration: 10 testingReturn: -3.5734
+Iteration: 10 practicalReturn: -3.8129
+--------------------------------------------------
+Iteration: 20 testingReturn: -3.6739
+Iteration: 20 practicalReturn: -3.8904
+--------------------------------------------------
+Iteration: 50 testingReturn: -1.3985
+Iteration: 50 practicalReturn: -1.4355
+--------------------------------------------------
+Iteration: 100 testingReturn: -3.5580
+Iteration: 100 practicalReturn: -3.7259
+--------------------------------------------------
+Iteration: 200 testingReturn: -2.1265
+Iteration: 200 practicalReturn: -2.1084
+--------------------------------------------------
+Iteration: 500 testingReturn: -2.2203
+Iteration: 500 practicalReturn: -2.4101
+--------------------------------------------------
+Iteration: 1000 testingReturn: -1.7010
+Iteration: 1000 practicalReturn: -1.7934
+--------------------------------------------------
+Iteration: 2000 testingReturn: -2.1290
+Iteration: 2000 practicalReturn: -2.3613
+--------------------------------------------------
+
+
+of0w1.0g5v0.0625l0.1
+Iteration: 1 testingReturn: -3.6255
+Iteration: 1 practicalReturn: -3.8445
+--------------------------------------------------
+Iteration: 2 testingReturn: -3.6216
+Iteration: 2 practicalReturn: -3.9135
+--------------------------------------------------
+Iteration: 5 testingReturn: -3.6486
+Iteration: 5 practicalReturn: -3.8271
+--------------------------------------------------
+Iteration: 10 testingReturn: -3.5701
+Iteration: 10 practicalReturn: -3.8307
+--------------------------------------------------
+Iteration: 20 testingReturn: -3.6268
+Iteration: 20 practicalReturn: -3.7805
+--------------------------------------------------
+Iteration: 50 testingReturn: -1.6520
+Iteration: 50 practicalReturn: -1.6887
+--------------------------------------------------
+Iteration: 100 testingReturn: -2.1838
+Iteration: 100 practicalReturn: -2.2097
+--------------------------------------------------
+Iteration: 200 testingReturn: -1.8574
+Iteration: 200 practicalReturn: -1.9037
+--------------------------------------------------
+Iteration: 500 testingReturn: -2.3749
+Iteration: 500 practicalReturn: -2.3519
+--------------------------------------------------
+Iteration: 1000 testingReturn: -1.8543
+Iteration: 1000 practicalReturn: -1.8576
+--------------------------------------------------
+Iteration: 2000 testingReturn: -2.0723
+Iteration: 2000 practicalReturn: -2.0204
+--------------------------------------------------
+Iteration: 5000 testingReturn: -1.9397
+Iteration: 5000 practicalReturn: -1.9388
+--------------------------------------------------
+Iteration: 10000 testingReturn: -2.0157
+Iteration: 10000 practicalReturn: -1.9521
+--------------------------------------------------
+Iteration: 15000 testingReturn: -1.6901
+Iteration: 15000 practicalReturn: -1.6406
+--------------------------------------------------
+Iteration: 20000 testingReturn: -1.7794
+Iteration: 20000 practicalReturn: -1.8155
+--------------------------------------------------
+
+
+of0w1.0g5v0.0625l0.1Retroflex
+Iteration: 1 testingReturn: -1.1896
+Iteration: 1 practicalReturn: -1.1594
+--------------------------------------------------
+Iteration: 2 testingReturn: -1.1858
+Iteration: 2 practicalReturn: -1.1609
+--------------------------------------------------
+Iteration: 5 testingReturn: -1.1944
+Iteration: 5 practicalReturn: -1.1437
+--------------------------------------------------
+Iteration: 10 testingReturn: -1.1959
+Iteration: 10 practicalReturn: -1.1407
+--------------------------------------------------
+Iteration: 20 testingReturn: -1.2148
+Iteration: 20 practicalReturn: -1.1634
+--------------------------------------------------
+Iteration: 50 testingReturn: -1.2068
+Iteration: 50 practicalReturn: -1.1277
+--------------------------------------------------
+Iteration: 100 testingReturn: -1.4472
+Iteration: 100 practicalReturn: -1.4867
+--------------------------------------------------
+Iteration: 200 testingReturn: -1.2680
+Iteration: 200 practicalReturn: -1.1242
+--------------------------------------------------
+Iteration: 500 testingReturn: -1.4462
+Iteration: 500 practicalReturn: -1.4417
+--------------------------------------------------
+Iteration: 1000 testingReturn: -1.5873
+Iteration: 1000 practicalReturn: -1.4826
+--------------------------------------------------
+Iteration: 2000 testingReturn: -0.9550
+Iteration: 2000 practicalReturn: -0.9211
+--------------------------------------------------
+Iteration: 5000 testingReturn: -1.0388
+Iteration: 5000 practicalReturn: -0.9793
+--------------------------------------------------
+
+
+of0w1.0g5v0.125l0.05
+Iteration: 1 testingReturn: -3.6104
+Iteration: 1 practicalReturn: -3.7461
+--------------------------------------------------
+Iteration: 2 testingReturn: -3.6525
+Iteration: 2 practicalReturn: -3.7968
+--------------------------------------------------
+Iteration: 5 testingReturn: -3.5934
+Iteration: 5 practicalReturn: -3.8098
+--------------------------------------------------
+Iteration: 10 testingReturn: -3.6234
+Iteration: 10 practicalReturn: -3.7793
+--------------------------------------------------
+Iteration: 20 testingReturn: -3.5783
+Iteration: 20 practicalReturn: -3.7690
+--------------------------------------------------
+Iteration: 50 testingReturn: -2.0640
+Iteration: 50 practicalReturn: -2.2361
+--------------------------------------------------
+Iteration: 100 testingReturn: -3.8482
+Iteration: 100 practicalReturn: -3.9631
+--------------------------------------------------
+Iteration: 200 testingReturn: -2.6044
+Iteration: 200 practicalReturn: -2.7632
+--------------------------------------------------
+Iteration: 500 testingReturn: -2.4779
+Iteration: 500 practicalReturn: -2.5007
+--------------------------------------------------
+Iteration: 1000 testingReturn: -2.0210
+Iteration: 1000 practicalReturn: -2.2252
+--------------------------------------------------
+Iteration: 2000 testingReturn: -2.0904
+Iteration: 2000 practicalReturn: -2.1665
+--------------------------------------------------
+Iteration: 5000 testingReturn: -2.3221
+Iteration: 5000 practicalReturn: -2.4028
+--------------------------------------------------
+Iteration: 10000 testingReturn: -3.5644
+Iteration: 10000 practicalReturn: -3.7292
+--------------------------------------------------
+Iteration: 15000 testingReturn: -2.2780
+Iteration: 15000 practicalReturn: -2.2652
+--------------------------------------------------
+
+
+of0w1.0g5v0.125l0.05Retroflex
+Iteration: 1 testingReturn: -1.2267
+Iteration: 1 practicalReturn: -1.1519
+--------------------------------------------------
+Iteration: 2 testingReturn: -1.2280
+Iteration: 2 practicalReturn: -1.1374
+--------------------------------------------------
+Iteration: 5 testingReturn: -1.2255
+Iteration: 5 practicalReturn: -1.1184
+--------------------------------------------------
+Iteration: 10 testingReturn: -1.2100
+Iteration: 10 practicalReturn: -1.1366
+--------------------------------------------------
+Iteration: 20 testingReturn: -1.1895
+Iteration: 20 practicalReturn: -1.1320
+--------------------------------------------------
+Iteration: 50 testingReturn: -0.9102
+Iteration: 50 practicalReturn: -0.8667
+--------------------------------------------------
+Iteration: 100 testingReturn: -0.7650
+Iteration: 100 practicalReturn: -0.7893
+--------------------------------------------------
+Iteration: 200 testingReturn: -0.7912
+Iteration: 200 practicalReturn: -0.7878
+--------------------------------------------------
+Iteration: 500 testingReturn: -1.0291
+Iteration: 500 practicalReturn: -1.0761
+--------------------------------------------------
+Iteration: 1000 testingReturn: -1.1773
+Iteration: 1000 practicalReturn: -1.1402
+--------------------------------------------------
+Iteration: 2000 testingReturn: -0.9553
+Iteration: 2000 practicalReturn: -0.9526
+--------------------------------------------------
+Iteration: 5000 testingReturn: -1.1673
+Iteration: 5000 practicalReturn: -1.2097
+--------------------------------------------------
+
+
+of0w1.0g5v0.125l0.1
+Iteration: 1 testingReturn: -3.6082
+Iteration: 1 practicalReturn: -3.8017
+--------------------------------------------------
+Iteration: 2 testingReturn: -3.6054
+Iteration: 2 practicalReturn: -3.8319
+--------------------------------------------------
+Iteration: 5 testingReturn: -3.6587
+Iteration: 5 practicalReturn: -3.7897
+--------------------------------------------------
+Iteration: 10 testingReturn: -3.6494
+Iteration: 10 practicalReturn: -3.8156
+--------------------------------------------------
+Iteration: 20 testingReturn: -3.6000
+Iteration: 20 practicalReturn: -3.7670
+--------------------------------------------------
+Iteration: 50 testingReturn: -1.9802
+Iteration: 50 practicalReturn: -2.0184
+--------------------------------------------------
+Iteration: 100 testingReturn: -3.8291
+Iteration: 100 practicalReturn: -3.8067
+--------------------------------------------------
+Iteration: 200 testingReturn: -2.1907
+Iteration: 200 practicalReturn: -2.3709
+--------------------------------------------------
+Iteration: 500 testingReturn: -2.8717
+Iteration: 500 practicalReturn: -2.7628
+--------------------------------------------------
+Iteration: 1000 testingReturn: -2.0265
+Iteration: 1000 practicalReturn: -2.0535
+--------------------------------------------------
+Iteration: 2000 testingReturn: -3.6849
+Iteration: 2000 practicalReturn: -3.7535
+--------------------------------------------------
+Iteration: 5000 testingReturn: -2.3109
+Iteration: 5000 practicalReturn: -2.3925
+--------------------------------------------------
+Iteration: 10000 testingReturn: -2.2959
+Iteration: 10000 practicalReturn: -2.1575
+--------------------------------------------------
+Iteration: 15000 testingReturn: -1.7494
+Iteration: 15000 practicalReturn: -1.7881
+--------------------------------------------------
+
+
+of0w1.0g5v0.125l0.1Retroflex
+Iteration: 1 testingReturn: -1.1961
+Iteration: 1 practicalReturn: -1.1609
+--------------------------------------------------
+Iteration: 2 testingReturn: -1.2236
+Iteration: 2 practicalReturn: -1.1558
+--------------------------------------------------
+Iteration: 5 testingReturn: -1.2127
+Iteration: 5 practicalReturn: -1.1387
+--------------------------------------------------
+Iteration: 10 testingReturn: -1.2341
+Iteration: 10 practicalReturn: -1.1214
+--------------------------------------------------
+Iteration: 20 testingReturn: -1.1904
+Iteration: 20 practicalReturn: -1.1165
+--------------------------------------------------
+Iteration: 50 testingReturn: -1.3152
+Iteration: 50 practicalReturn: -1.1889
+--------------------------------------------------
+Iteration: 100 testingReturn: -1.3982
+Iteration: 100 practicalReturn: -1.4525
+--------------------------------------------------
+Iteration: 200 testingReturn: -1.6545
+Iteration: 200 practicalReturn: -1.5248
+--------------------------------------------------
+Iteration: 500 testingReturn: -0.9851
+Iteration: 500 practicalReturn: -0.9428
+--------------------------------------------------
+Iteration: 1000 testingReturn: -0.9993
+Iteration: 1000 practicalReturn: -0.9235
+--------------------------------------------------
+Iteration: 2000 testingReturn: -1.5376
+Iteration: 2000 practicalReturn: -1.4753
+--------------------------------------------------
+Iteration: 5000 testingReturn: -0.9691
+Iteration: 5000 practicalReturn: -0.8854
+--------------------------------------------------
+
+

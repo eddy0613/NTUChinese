@@ -1,0 +1,170 @@
+301 a Hello?
+302 b Hello? Mei, have you arrived?
+303 b Hello? Where are you now?
+304 b Hi! Mei, where are you?
+305 a Sorry! I'll be there right away!
+306 a I'm sorry! I got the time wrong, I'll be there soon!
+307 a Hi, Wang! I'm around the corner.
+308 a I'm lost, Wang.
+309 a Sorry, I was delayed, I'll be there soon! 
+310 b I'll wait for you at exit 1.
+311 b Do you see an exit sign? I'm here.
+312 a I found the exit! Where are you?
+313 a I'm here, but I didn't see you!
+314 a I'm at the exit, where are you?
+315 b I'm wearing a red shirt, do you see me?
+316 b I'm under the sign, you will find me when you arrive.
+317 b Turn around, I'm the guy waving at you.
+318 b I see you. Just stay there.
+319 a I see you! Sorry I'm late! Did you wait a long time?
+320 b No, I just arrived too.
+321 b It's OK, it's hard to find the way here.
+322 b that's OK, I was few minutes early than you.
+323 b Never mind, I just arrived ten minutes ago.
+324 b Not so long, I just arrived.
+325 a Sorry, I won't be late next time.
+326 a I could have arrived earlier, it's all traffic's fault.
+327 a The traffic here is quite messy!
+328 b Never mind, let's go!
+329 b Yeah, it's rush hour now.
+330 a Are we going there on foot?
+331 a Where's the restaurant?
+332 a I'm new to here, please lead me.
+333 b Follow me, it only takes five minutes.
+334 b It's around the corner, just a minute.
+335 b OK, just follow me!
+336 a Your clothes are gorgeous!
+337 a Where did you buy your bag? It looks good.
+338 a Did you just get your hair done?
+339 a Are your shoes new?
+340 a Is your phone the newest type?
+341 b Yeah, you see it.
+342 b Thanks, I bought it at a night market.
+343 a It looks pretty expensive.
+344 a That must cost you a lot.
+345 b No, not at all.
+346 b Guess how much.
+347 b I think it's quite cheap.
+348 a I can't get it.
+349 a I have no idea, 2000 TWD?
+350 a Really? It must be over 2000 TWD.
+351 a Really? I guess it must be over 2000 TWD. 
+352 b 1000 TWD, surprise!
+353 b No, I only spent 1000 TWD.
+354 b It's only 1000 TWD, good deal!
+355 a It's really a good deal!
+356 a Great! It's indeed not expensive.
+357 b Here we are, the restaurant is in front of us.
+358 a The restaurant is so beautiful! 
+359 a It so crowded!
+360 a Finally! I'm so hungry!
+361 a The restaurant looks highclass!
+362 a It's hard to this place!
+363 b So glad we've booked the seat, no need to wait.
+364 b Yes! It's quite special!
+365 b This restaurant is very popular, many people recommend it.
+366 a What time is it now?
+367 a Did we reserve 8'o clock?
+368 b It's eight now, let's go!
+369 b It's eight now, let's go!
+370 b Yes, it's about time, let's go!
+371 a OK.
+401 a Welcome, did you make any reservation?
+402 b Yes, my name is Wang.
+403 a Here please.
+404 a Please wait, we will lead you to your seat.
+405 a Thanks, Mr. Wang, please wait.
+406 b Thanks.
+407 b OK.
+408 a Are these two seats OK?
+409 a The table near the window, is it OK?
+410 a Sorry, much more customers today.
+411 a Sorry, we only have these two seats.
+412 a Please sit here first, I'll change a bigger table for you.
+413 b Thanks.
+414 b No problem, anywhere is fine.
+415 b Never mind.
+416 a Please have a look on the menu, I'll order for you right away.
+417 b Thanks, let's see the menu.
+418 b OK, thanks.
+419 a Would you like to order?
+420 a Can I take your order now?
+421 b What's your popular dish?
+422 b Excuse me, we haven't decided yet.
+423 b Do you have any speical meal?
+424 a Yes, it's in the last page.
+425 a Fish. Almost everyone orders it.
+426 a Do you need any suggestion?
+427 a All of our dishes are popular.
+428 a Yes, package meal is one for 200 TWD.
+429 b OK, we can start order now.
+430 b It's OK, we can look ourselves.
+431 a OK, what do you want to order?
+432 b I want an Kung Pao Chicken.
+433 b Dry beans, sweet and sour meat, and ginger beef. All big size.
+434 b I want a slice meat with sauce and eggplant with fish.
+435 a OK, something more?
+436 a That's all?
+437 a All three are big size?
+438 b That's all.
+439 b Yes, what soup do you have today?
+440 b And Mapo Tofu, that's all.
+441 b Yes, can you give us more chopsticks?
+442 a OK, thanks.
+443 a We have corn soup and hot and sour soup today. Do you want some?
+444 a We have ribs soup and corn soup today.
+445 a Of course.
+446 a OK, anything else?
+447 b I think that's all.
+448 b We want a hot and sour soup.
+449 b Oh, please don't add MSG.
+450 a OK, do you need some drink or dessert?
+451 b What dessert do you have?
+452 b What kind of drink?
+453 a Black tea, green tea and orange juice.
+454 a Please see the last page of the menu.
+455 a We have vanilla ice cream and chocolate cake.
+456 b Do you have oolong tea?
+457 b Please give us two orange juice and vallina ice cream.
+458 b Two glasses of water will be fine.
+459 a Two?
+460 a OK, that's all?
+461 b Yes, thanks.
+462 b Yes, please don't put ice in the drink.
+463 a OK, we'll serve the meal in a minute.
+501 a Wang, how are you recently?
+502 b Nice, just a little busy.
+503 b It's OK, just more things to work.
+504 b I'm much busier than before, today I take a break.
+505 a Oh, what are you busy for?
+506 a Why do you have so much stuff?
+507 a Anything interesting? Tell me.
+508 b I have something to do with my family.
+509 b I'm preparing to go to Europe for a while.
+510 b As same as usual, normal and busy office worker life.
+511 b I went cycling around the island.
+512 b I've been working on the business trip.
+513 a You've worked hard.
+514 a Great! I want to go out to play too.
+515 b Don't mention it, how about you?
+516 b Ha, OK! Let's hang out together!
+517 b It's fun, but tiring.
+518 a I've been very busy just like you.
+519 a I've heard that there's an exhibition recently, let's go together!
+520 a I went to Green Island a while ago. Have you been there?
+521 a I have nothing special other than my routine work everyday.
+522 a Let's do something relaxed someday, may go to a movie?
+523 b No I haven't, is there beautiful?
+524 b Where do you plan to go on holiday?
+525 b OK! We can make an appointment when we get back.
+526 b There are several domestic films on the released recently, do you want to go next weekend?
+527 a I want to see the movie "Seediq Bale"!
+528 a Green island, the sand beach there must be beautiful.
+529 a Great! I'll shirk off other appointments.
+530 b Deal!
+531 b I want to go there too, but don't have chance.
+532 b Can we go in the morning? It's cheaper.
+533 a OK, up to you!
+534 a Let's go on next vacation!
+535 b Really? I'm happy to hear that.
+536 a You're welcome.

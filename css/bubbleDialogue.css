@@ -1,0 +1,97 @@
+.bubbledLeft,.bubbledRight{
+	font-size:20px;
+	position: relative;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	max-width: 80%;
+	clear: both;
+	cursor: pointer;
+}
+
+.bubbledLeft{
+	float: left;
+	margin-right: auto;
+	margin-left: 36px;
+	padding: 4px 10px 4px 15px; /*position within the border*/
+}
+
+.bubbledLeft:before{
+	z-index: -1;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	content: "";
+
+	border-width: 8px 10px 8px 17px; 
+	border-image: url(../img/speech_bubble_left_2.png) 8 10 8 17 stretch stretch;
+	-webkit-border-image: url(../img/speech_bubble_left_2.png) 8 10 8 17 stretch stretch;
+	-moz-border-image: url(../img/speech_bubble_left_2.png) 8 10 8 17 stretch stretch;
+	-o-border-image: url(../img/speech_bubble_left_2.png) 8 10 8 17 stretch stretch;
+}
+
+.bubbledLeft:after{
+	z-index: -1;
+	position: absolute;
+	left: -36px;
+	width: 32px;
+	bottom: 0px;
+	height: 32px;
+	content:"";
+
+	background-image: url(../img/left_chatter2.png);
+	background-size: 32px 32px;
+	background-position: bottom left;
+
+	border-radius: 3px;
+	-webkit-border-radius: 3px;	
+	-moz-border-radius: 3px;	
+	-o-border-radius: 3px;	
+	-ms-border-radius: 3px;	
+}
+
+.bubbledRight{
+	float: right;
+	margin-left: auto;
+	text-align: right;
+
+	margin-right: 36px;
+	padding: 4px 15px 4px 10px; /*position within the border*/	
+}
+
+.bubbledRight:before{
+	z-index: -1;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	content: "";
+
+	border-width: 8px 17px 8px 10px; 
+	border-image: url(../img/speech_bubble_right_2.png) 8 17 8 10 stretch stretch ;
+	-webkit-border-image: url(../img/speech_bubble_right_2.png) 8 17 8 10 stretch stretch ;
+	-moz-border-image: url(../img/speech_bubble_right_2.png) 8 17 8 10 stretch stretch ;
+	-o-border-image: url(../img/speech_bubble_right_2.png) 8 17 8 10 stretch stretch ;
+}
+
+.bubbledRight:after{
+	z-index: -1;
+	position: absolute;
+	right: -36px;
+	width: 32px;
+	bottom: 0px;
+	height: 32px;
+	content:"";
+
+	background-image: url(../img/right_chatter2.png);
+	background-size: 32px 32px;
+	background-position: bottom left;
+
+	border-radius: 3px;
+	-webkit-border-radius: 3px;	
+	-moz-border-radius: 3px;	
+	-o-border-radius: 3px;	
+	-ms-border-radius: 3px;	
+}

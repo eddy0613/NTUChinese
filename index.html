@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+  <meta charset="utf-8">
+  <meta charset="BIG5"/>
+  -->
+  <title>NTU Chinese</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+	<!--link rel="stylesheet/less" href="less/bootstrap.less" type="text/css" /-->
+	<!--link rel="stylesheet/less" href="less/responsive.less" type="text/css" /-->
+	<!--script src="js/less-1.3.3.min.js"></script-->
+	<!--append ‘#!watch’ to the browser URL, then refresh the page. -->
+    
+   	<script src='common/sprintf.min.js'></script>
+	<!--
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	-->
+	<link href="css/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+	<link href="css/bootstrap.new.css" rel="stylesheet">
+	<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/bubbleDialogue.css" rel="stylesheet">
+	<!--    	<link href="css/std.css" rel="stylesheet">  -->
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+  <![endif]-->
+
+  <!-- Fav and touch icons -->
+  <!--
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">
+  <link rel="shortcut icon" href="img/favicon.png">
+  -->
+	<!--
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	-->
+	<script src="js/jquery-1.10.1.js"></script>
+	<script src="js/jquery-ui-1.10.3.custom.js"></script>
+	<script type="text/javascript" src="js/bootstrap.new.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script src="js/Chart.js"></script>
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script type="text/javascript">
+		google.load('visualization', '1', {'packages':['corechart']});
+	</script>
+
+	<script src="js/audiodisplay.js"></script>
+	<script src="js/recorder.js"></script>
+	<script src="js/main.js"></script>
+
+
+	<style>
+		#all {
+			height: 700px;
+		}
+	</style>
+</head>
+
+<body>
+<div class="container-fluid">
+			
+	<div class="row-fluid">
+		<div class="col-18 col-lg-12">
+            <div class="navbar navbar-inverse">
+              <div class="container">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                  <col-lg- class="icon-bar"></col-lg->
+                  <col-lg- class="icon-bar"></col-lg->
+                  <col-lg- class="icon-bar"></col-lg->
+                </button>
+                <a class="navbar-brand" href="#">NTU Chinese</a>
+                <div class="nav-collapse collapse navbar-responsive-collapse">
+                  <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li class="active"><a href="use.html">Use</a></li>
+                  </ul>
+                  <ul class="nav navbar-nav pull-right">
+					<li class="divider-vertical"></li>
+                    <li><a href="#">NTU Speech Lab</a></li>
+                  </ul>
+                </div><!-- /.nav-collapse -->
+              </div><!-- /.container -->
+            </div><!-- /.navbar -->
+		</div>
+	</div>
+
+</div>
+
+<div class="container-fluid" id="userSelectInformation">
+
+	<section id="all">
+	<div class="row-fluid">
+		<div class="col-18 col-lg-12 text-center">
+			<h1>
+			<strong>
+				NTU Chinese 2.0
+			</strong>
+			</h1>
+		</div>
+	</div>
+
+	<div class="row-fluid">
+		<div class="col-offset-3 col-lg-6 text-center">
+			<h1>
+<div class="carousel slide" id="carousel-521892">
+				<!--
+				<ol class="carousel-indicators">
+					<li class="active" data-slide-to="0" data-target="#carousel-521892">
+					</li>
+					<li data-slide-to="1" data-target="#carousel-521892">
+					</li>
+				</ol>
+				-->
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="img/NTUChinesePic.png" width="600" height="200">
+										</div>
+					<div class="item">
+						<img src="img/NTUChineseLogo.png" width="600" height="200">
+										</div>
+				</div> <a data-slide="prev" href="#carousel-521892" class="left carousel-control">‹</a> <a data-slide="next" href="#carousel-521892" class="right carousel-control">›</a>
+			</div>
+
+			<br>
+			<div id="dialogueLoop">
+				<img src="img/dialogueLoop.png" width="680" height="170">
+			    <div id="divCourse1" style="position:absolute; left: 650px; top: 180px; width: 64px; height: 68px;">
+                	<input type="checkbox" name="CourseID" value="1"></div>
+				<div id="divCourse2" style="position:absolute; left: 804px; top: 180px; width: 64px; height: 68px;">
+                	<input type="checkbox" name="CourseID" value="2"></div>
+                <div id="divCourse3" style="position:absolute; left: 958px; top: 180px; width: 64px; height: 68px;">
+                	<input type="checkbox" name="CourseID" value="3"></div>
+                <div id="divCourse4" style="position:absolute; left: 1113px; top: 180px; width: 64px; height: 68px;">
+                	<input type="checkbox" name="CourseID" value="4"></div>
+                <div id="divCourse5" style="position:absolute; left: 1156px; top: 276px; width: 64px; height: 68px;">
+                	<input type="checkbox" name="CourseID" value="5"></div>
+                <div id="divCourse6" style="position:absolute; left: 1016px; top: 276px; width: 64px; height: 68px;">
+                	<input type="checkbox" name="CourseID" value="6"></div>
+                <div id="divCourse7" style="position:absolute; left: 884px; top: 276px; width: 64px; height: 68px;">
+                	<input type="checkbox" name="CourseID" value="7"></div>
+                <div id="divCourse8" style="position:absolute; left: 747px; top: 276px; width: 64px; height: 68px;">
+                	<input type="checkbox" name="CourseID" value="8"></div>
+                <div id="divCourse9" style="position:absolute; left: 608px; top: 276px; width: 64px; height: 68px;">
+                	<input type="checkbox" name="CourseID" value="9"></div>
+			</div>
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class="col-lg-12 text-center">
+			<!-- focus unit(s) -->
+			<h2>
+			<strong>
+				Unit to focus
+			</strong>
+			</h2>
+			<!--
+			<div class="btn-group" data-toggle="buttons-radio">
+				<button type="button" class="btn" name="UnitType" value="0">All</button>
+				<button type="button" class="btn" name="UnitType" value="1">Part I</button>
+				<button type="button" class="btn" name="UnitType" value="2">Part II</button>
+			</div>
+			-->
+			<label  class = "checkbox-inline" >
+				<input type="radio" name="UnitType" value="0" checked onclick="onclickAllUnits()"> All units
+			</label>
+			<label  class = "checkbox-inline" >
+				<input type="radio" name="UnitType" value="1" onclick="onclickRetroflexUnits()"> Retroflex
+			</label>
+			<label  class = "checkbox-inline" >
+				<input type="radio" name="UnitType" value="2" disabled> Commonly failed
+			</label>
+			<label  class = "checkbox-inline" >
+				<input type="radio" name="UnitType" value="3" disabled> All tones
+			</label>
+			<!--
+			<label  class = "checkbox-inline" >
+				<input type="radio" name="UnitType" value="3"> Common fail units
+			</label>
+			-->
+			<!-- End focus unit(s) -->
+	      	<p></p>
+			<input type="checkbox" name="BR" value="0" id="poorRetroflex"> (demo only) poor retroflex score
+
+		</div>
+	</div>
+
+	<div class="row-fluid" style="height:160px">
+		<div class="col-lg-4 col-offset-4 text-center">
+			<h2></h2>
+			<button type="button" class="btn btn-primary btn-large" onclick="onclickStart()">Start</button>
+		</div>
+	</div>
+	</section>
+
+
+</div>
+			
+<div class="container-fluid" id="dialogueContent" style="display:none;">
+
+	<section id="all">
+				<style>
+					.mybtn {
+						width: 150px;
+						font-size: 16px;
+					}
+
+				</style>
+	<div class="row-fluid">
+		<div class="col-lg-3 offset1">
+			<div id="dialogueContentFrame" class="text-center panel panel-success panel-fakeHeader" style="height: 41px">
+				<!--<div id="portamento_container">
+				<div id="contentFixedBar"class="panel-heading">Dialogue Content</div>
+				<script>
+					// set #wrapper as the visual coundary of the panel
+					$('#contentFixedBar').portamento({wrapper: $('#wrapper')});
+				</script>
+				</div>
+				-->
+				<div id="contentFixedBar" class="panel-heading"><font size="4">Dialogue Context</font></div>
+			</div>
+				<div id="dialogueContentSection" class="text-center panel panel-success" style="height:220px">
+				</div>
+			<div class="col-lg-6">
+				<button id="record" type="button" class="mybtn btn btn-danger" onclick="toggleRecording(this);">Record</button>
+				<br></br>
+				<div class="btn-group">
+ 					<button id="play" type="button" class="mybtn btn btn-success dropdown-toggle" data-toggle="dropdown">
+   					 Play <span class="caret"></span>
+  					</button>
+  					<ul class="dropdown-menu">
+    					<li id="playsample"><a onclick="playSample(this)">Play Sample</a></li>
+    					<li id="playrecord"><a onclick="playRecord(this)">Play Record</a></li>
+  					</ul>
+				</div>
+				<!--
+				<button id="playaudio" type="button" class="mybtn btn btn-success" onclick="playAudio(this)">Play Sample</button>
+				-->
+			</div>	
+			<div class="col-lg-6">
+				<button id="sendaudio" type="button" class="mybtn btn btn-primary" onclick="confirmUserSelection();sendAudio()" data-loading-text="Sending...">Send</button>
+				<!--
+				<button id="sendaudio" type="button" class="mybtn btn btn-primary" onclick="confirmUserSelection()" data-loading-text="Sending...">Send</button>
+				-->
+				<br></br>		
+				<a data-toggle="modal" href="#myModal" class="mybtn btn btn-warning">Statistics</a>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal">
+                          <div class="modal-dialog" height="200" width="1600">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 class="modal-title">Performance Statistics</h4>
+                              </div>
+                              <div class="modal-body">
+								<!--
+								<canvas id="canvas_IF" height="200" width="1500"></canvas>
+                              	<canvas id="canvas_Tone" height="200" width="1500" ></canvas>
+                              	<canvas id="canvas_IF_line" height="200" width="1500" style="display:none"></canvas>
+                              	<canvas id="canvas_IF_log" height="200" width="1500" style="display:none"></canvas>
+                              	<canvas id="canvas_Tone_line" height="200" width="1500" style="display:none"></canvas>
+                              	<canvas id="canvas_Tone_log" height="200" width="1500" style="display:none"></canvas>
+                              	-->
+								<div id="CurrentIF" style="width: 1500px; height: 0px;"></div>
+                              	<div id="CurrentTone" style="width: 1500px; height: 0px;"></div>
+                              	<div id="RandomCompareIF" style="width: 1500px; height: 0px;"></div>
+                              	<div id="RandomCompareTone" style="width: 1500px; height: 0px;"></div>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>        
+	 	                      </div>
+                            </div><!-- /.modal-content -->
+                          </div><!-- /.modal-dialog -->
+                        </div><!-- /.modal -->
+				</div>	
+		</div>
+		<div class="col-lg-7">
+			<div class="row-fluid">
+				<div class="text-center panel panel-info panel-fakeHeader" style="height: 41px">
+					<div class="panel-heading"><font size="4">Please Select</font></div>
+				</div>
+				<div class="text-center panel panel-info" style="height: 340px" id="selectionFrame">
+				    <button id="showSentences" type="button" class="btn btn-primary" onclick="showCandidate()" style="display:none">Show next candidate sentences &raquo;</button>
+					<!--<h4 class="btn-group btn-block" id="selectionBox" data-toggle="buttons">-->
+					<h4 class="btn-group btn-block" id="selectionBox">
+					</h4>
+				</div>
+		</div>
+	</div>
+	<!-- old script for chart.js
+	<script>
+			var barChartDataIF = {
+			labels : ["b", "p", "m", "f", "d", "t", "n", "l", "g", "k", "h", "ji", "chi", "shi", "j", "ch", "sh", "r", "tz", "ts", "s", "sic", "a", "o", "ai", "ei", "au", "en", "an", "ang", "eng", "i", "ie", "iau", "ian", "in", "ing", "u", "ou", "iou", "e", "uo", "uei", "uan", "uen", "ueng", "iang", "iue", "iu", "ia", "iuan", "uai", "uang", "iun", "iung", "empt1", "empt2", "er"],
+			datasets : [
+				{
+					fillColor : "rgba(220,220,220,0.5)",
+					strokeColor : "rgba(220,220,220,1)",
+					data : []
+				}
+			]
+			
+		}
+		var barChartDataTone = {
+			labels : ["1", "2", "3", "4", "5", "11", "12", "13", "14", "21", "22", "23", "24", "25", "31", "32", "33", "34", "35", "41", "42", "43", "44", "45", "b11", "b12", "b13", "b14", "b21", "b22", "b23", "b24", "b25", "b31", "b32", "b33", "b34", "b35", "b41", "b42", "b43", "b44", "b45"],
+			datasets : [
+				{
+					fillColor : "rgba(220,220,220,0.5)",
+					strokeColor : "rgba(220,220,220,1)",
+					data : []
+				}
+			]
+			
+		}
+
+	var myBarIF = new Chart(document.getElementById("canvas_IF").getContext("2d")).Bar(barChartDataIF);
+	var myBarTone = new Chart(document.getElementById("canvas_Tone").getContext("2d")).Bar(barChartDataTone);
+	</script>
+	-->
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<!--
+	<script>
+	google.load('visualization', '1', {packages: ['corechart']});
+	function drawVisualization() {
+        // Create and populate the data table.
+        var data = google.visualization.arrayToDataTable([
+          ['Month', 'Rwanda', 'Average'],
+          ['b',    45,      0.095],
+          ['p',    28,      0.070],
+          ['m',    39,      0.63],
+          ['f',    21,      0.124],
+          ['d',    96,      0.096]
+        ]);
+        // Create and draw the visualization.
+        var ac = new google.visualization.ComboChart(document.getElementById('RandomCompare'));
+        ac.draw(data, {
+         title : 'Monthly Coffee Production by Country',
+          width: 600,
+          height: 400,
+          vAxes: {0:{title: "Scores"},1:{title:"Compare to Random",format:'#%'}},
+          hAxis: {title: "phone"},
+          seriesType: "bars",
+          series: {1: {targetAxisIndex:1,type: "line"}}
+        });
+      }
+      google.setOnLoadCallback(drawVisualization);
+	</script>
+	-->
+	<!--
+	<div class="row-fluid">
+		<div class="col-lg-11 offset1">
+				<div class="col-lg-4 btn-group">
+					<button id="record" type="button" class="mybtn btn btn-danger" onclick="toggleRecording(this);">Record</button>
+					<button id="playaudio" type="button" class="mybtn btn btn-success" onclick="confirmUserSelection();sendAudio()">Play</button>
+				</div>	
+				<div class="col-lg-3">
+					<button id="sendaudio" type="button" class="btn btn-primary btn-block" onclick="confirmUserSelection();sendAudio()">Send</button>
+				</div>	
+		</div>
+		</div>
+	</div>
+	-->
+
+	<div class="row-fluid">
+		<div class="col-lg-10 offset1">
+			<div class="panel" style="height:280px">
+
+				<div class="col-lg-1 text-center">
+					<span class="label label-info">Total</span>
+					<tag id="totalScore"></tag>
+				</div>
+				<div class="col-lg-1 text-center">
+					<span class="label">Pronun.</span>
+					<tag id="pronunScore"></tag>
+				</div>
+				<div class="col-lg-1 text-center">
+					<span class="label">Tone</span>
+					<tag id="toneScore"></tag>
+				</div>
+				<div class="col-lg-1 text-center">
+					<span class="label">Timing</span>
+					<tag id="timingScore"></tag>
+				</div>
+				<div class="col-lg-1 text-center">
+					<span class="label">Emphasis</span>
+					<tag id="emphasisScore"></tag>
+				</div>
+				<div class="col-lg-2  offset2 text-center">
+				</div>
+				<div id="scoreDetail" class="row-fluid">
+				<!--
+				<table id="scoreDetail" class="table table-striped">
+					<tr id="scoreDetail">
+					</tr>
+				</table>
+				-->
+				</div>	
+
+			</div>
+		</div>
+
+	</div>
+	</section>
+
+</div>
+</body>
+
+
+<script>
+/* for randomly check course checkbox usage */
+var min = 1;
+var max = 9; // totally 9 trees
+randomChecked = Math.floor(Math.random() * (max - min + 1)) + min;
+$('input:checkbox[name="CourseID"]').each (function () {
+	if ((this.value) == randomChecked.toString()) {
+		$(this).attr('checked',true);
+	}
+});
+
+$(function () {
+
+	var width = window.innerWidth;
+	$("#CurrentIF").css('width', width);
+	$("#CurrentTone").css('width', width);
+	$("#RandomCompareIF").css('width', width);
+	$("#RandomCompareTone").css('width', width);
+});
+
+function onclickAllUnits() {
+	var min = 1;
+	var max = 9; // totally 9 trees
+	randomChecked = Math.floor(Math.random() * (max - min + 1)) + min;
+	var $inputs = $('input:checkbox[name="CourseID"]');
+	$inputs.prop('checked', false);
+	$inputs.filter('[value="' + randomChecked + '"]').prop('checked', true);
+	/*
+	$('input:checkbox[name="CourseID"]').each (function () {
+		if ((this.value) == randomChecked.toString()) {
+			$(this).attr('checked',true);
+		}
+		else {
+			$(this).removeAttr('checked');
+//			$(this).attr('checked',false);
+		}
+	});
+	*/
+}
+
+function onclickRetroflexUnits() {
+	var $inputs = $('input:checkbox[name="CourseID"]');
+	$inputs.prop('checked', false);
+	$inputs.filter('[value="3"]').prop('checked', true);
+	$inputs.filter('[value="4"]').prop('checked', true);
+}
+</script>
+
+	<script>
+		var w = (document.body.clientWidth)/2-340-15;
+		document.getElementById("divCourse1").style.left = (w-290)+"px";
+		document.getElementById("divCourse2").style.left = (w-136)+"px";
+		document.getElementById("divCourse3").style.left = (w+18)+"px";
+		document.getElementById("divCourse4").style.left = (w+172)+"px";
+		document.getElementById("divCourse5").style.left = (w-330)+"px";
+		document.getElementById("divCourse6").style.left = (w-190)+"px";
+		document.getElementById("divCourse7").style.left = (w-53)+"px";
+		document.getElementById("divCourse8").style.left = (w+82)+"px";
+		document.getElementById("divCourse9").style.left = (w+220)+"px";
+	</script>	
+</html>

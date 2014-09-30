@@ -1,0 +1,3 @@
+example:
+
+python baseline_generation.py ../dialogTreeCorpus/cycle_tree/0-cycle_tree.changedIndex ../dialogTreeCorpus/cycle_tree/6-cycle_tree.lineIF.count ../dialogTreeCorpus/cycle_tree/7-cycle_tree.linetone.count ../dialogTreeCorpus/cycle_tree/8-cycle_tree.linetoneBoundary.count b 239 295  tree4_5/10turns_after/after8_9-18/ 15000
